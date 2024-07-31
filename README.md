@@ -1,1 +1,1 @@
-# Kidney_Tumour_Classification
+# Kidney_Disease_Classification

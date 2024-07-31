@@ -1,3 +1,12 @@
+Metadata-Version: 2.1
+Name: diseaseClassifier
+Version: 0.0.0
+Summary: A small python package for CNNclassifier app
+Home-page: https://github.com/senguptashritama/Kidney_Disease_Classification
+Author: senguptashritama
+Author-email: shritamasengupta9541@gmail.com
+Project-URL: Bug Tracker, https://github.com/senguptashritama/Kidney_Disease_Classification/issues
+
 # Kidney_Disease_Classification
 
 ## Workflows

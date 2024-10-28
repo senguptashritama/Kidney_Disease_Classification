@@ -1,9 +1,8 @@
 from flask import Flask, request, jsonify, render_template
 import os
 from flask_cors import CORS, cross_origin
-from .diseaseClassifier.utils.common import decodeImage
-from .diseaseClassifier.pipeline.prediction import PredictionPipeline
-
+from diseaseClassifier.utils.common import decodeImage
+from diseaseClassifier.pipeline.prediction import PredictionPipeline
 
 
 os.putenv('LANG', 'en_US.UTF-8')
@@ -30,7 +29,7 @@ def home():
 @app.route("/train", methods=['GET','POST'])
 @cross_origin()
 def trainRoute():
-    os.system("py main.py")
+    os.system("python main.py")
     # os.system("dvc repro")
     return "Training done successfully!"
 

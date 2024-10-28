@@ -4,6 +4,9 @@ from diseaseClassifier.pipeline.stage_02_prepare_base_model import PrepareBaseMo
 from diseaseClassifier.pipeline.stage_03_model_training import ModelTrainingPipeline
 from diseaseClassifier.pipeline.stage_04_model_evaluation import EvaluationPipeline
 
+
+
+
 STAGE_NAME = "Data Ingestion stage"
 try:
    logger.info(f">>>>>> stage {STAGE_NAME} started <<<<<<") 
@@ -13,6 +16,8 @@ try:
 except Exception as e:
         logger.exception(e)
         raise e
+
+
 
 
 
@@ -28,6 +33,7 @@ except Exception as e:
         raise e
 
 
+
 STAGE_NAME = "Training"
 try: 
    logger.info(f"*******************")
@@ -38,6 +44,8 @@ try:
 except Exception as e:
         logger.exception(e)
         raise e
+
+
 
 
 STAGE_NAME = "Evaluation stage"
@@ -51,5 +59,4 @@ try:
 except Exception as e:
         logger.exception(e)
         raise e
-
 
